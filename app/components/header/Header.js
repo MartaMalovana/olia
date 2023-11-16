@@ -6,12 +6,7 @@ import basket from "../../icons/basket-2.svg";
 import Menu from '../menu/Menu.js';
 
 export default function Header({ basketItems = 0 }) {
-    const [menuOpen, useMenuOpen] = useState(false);
-
-    const handleMenu = () => {
-        console.log(basketItems);
-        useMenuOpen(!menuOpen);
-    };
+    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <header className={styles.header}>
@@ -27,7 +22,7 @@ export default function Header({ basketItems = 0 }) {
                     ></Image>
                     <div className={styles.product_amount}>{basketItems}</div>
                 </button>
-                <div onClick={handleMenu}><Spin size={24}></Spin></div>
+                <div onClick={() => setMenuOpen(!menuOpen)}><Spin size={24}></Spin></div>
             </div>
             {menuOpen && <Menu />}
         </header>

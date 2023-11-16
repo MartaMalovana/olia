@@ -7,10 +7,10 @@ import plus from "../icons/plus.svg";
 import minus from "../icons/minus.svg";
 
 export default function Product({ product }) {
-  const [showInfo, useShowInfo] = useState(false);
-  const [amount, useAmount] = useState(1);
-  const [productId, useProductId] = useState(0);
-  const [basket, useBasket] = useState([]);
+  const [showInfo, setShowInfo] = useState(false);
+  const [amount, setAmount] = useState(1);
+  const [productId, setProductId] = useState(0);
+  const [basket, setBasket] = useState([]);
 
   const addProduct = (event) => {
     event.preventDefault();
@@ -43,7 +43,7 @@ export default function Product({ product }) {
             ? `${styles.product_preview} ${styles.product_preview_active}`
             : styles.product_preview
         }
-        onClick={() => useShowInfo(!showInfo)}
+        onClick={() => setShowInfo(!showInfo)}
       >
         {/* Product icon */}
         <Image
@@ -119,7 +119,7 @@ export default function Product({ product }) {
                   <button
                     type="button"
                     disabled={amount === 1 && true}
-                    onClick={() => useAmount(amount - 1)}
+                    onClick={() => setAmount(amount - 1)}
                   >
                     <Image
                       src={minus}
@@ -129,7 +129,7 @@ export default function Product({ product }) {
                     ></Image>
                   </button>
                   <span>{amount}</span>
-                  <button type="button" onClick={() => useAmount(amount + 1)}>
+                  <button type="button" onClick={() => setAmount(amount + 1)}>
                     <Image
                       src={plus}
                       width={15}
