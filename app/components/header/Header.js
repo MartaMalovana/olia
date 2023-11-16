@@ -10,7 +10,7 @@ export default function Header({ basketItems = 0 }) {
 
     const handleMenu = () => {
         console.log(basketItems);
-        useMenuOpen(menuOpen === false ? true : false);
+        useMenuOpen(!menuOpen);
     };
 
     return (

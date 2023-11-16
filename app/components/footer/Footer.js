@@ -19,12 +19,14 @@ export default function Footer() {
                             width={27}
                             height={27}
                             className={styles.facebook}
+                            alt="facebook icon"
                         ></Image>
                         <Image
                             src={instagram}
                             width={30}
                             height={30}
                             className={styles.instagram}
+                            alt="instagram icon"
                         ></Image>
                     </div>
                     <a href="mailto:#">olia@gmail.com</a>

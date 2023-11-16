@@ -16,13 +16,13 @@ export default function Slider() {
                 showThumbs={false}
             >
                 <div className={styles.slider_item}>
-                    <Image src={one}></Image>
+                    <Image src={one} alt="product banner"></Image>
                 </div>
                 <div className={styles.slider_item}>
-                    <Image src={two}></Image>
+                    <Image src={two} alt="product banner"></Image>
                 </div>
                 <div className={styles.slider_item}>
-                    <Image src={three}></Image>
+                    <Image src={three} alt="product banner"></Image>
                 </div>
             </Carousel>
         </div>

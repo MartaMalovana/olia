@@ -75,6 +75,7 @@
 
     @media screen and (min-width: 765px) {
       display: flex;
+      flex-direction: row-reverse;
     }
   }
 }
