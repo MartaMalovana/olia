@@ -34,7 +34,6 @@ export default function Product({ product }) {
           ? `${styles.product_item} ${styles.product_item_active}`
           : styles.product_item
       }
-      key={product.id}
     >
       {/* Product preview (product icon and name) */}
       <div

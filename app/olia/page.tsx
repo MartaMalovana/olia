@@ -16,7 +16,7 @@ export default function Page() {
         <ul className={styles.product_list}>
           {data.map((product) => (
             /* Product item */
-            <Product product={product} />
+            <Product product={product} key={product.id} />
           ))}
         </ul>
       </main>

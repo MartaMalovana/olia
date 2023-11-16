@@ -23,8 +23,8 @@ export default function Home() {
         <div className={styles.drop}>
           <Image src={drop} width={50} height={"auto"} alt="Oil drop"></Image>
           <p className={caveat.className}>
-            "Виготовляємо олію під замовлення. Тому вона завжди свіжа та преміум
-            якості!"
+            &quot;Виготовляємо олію під замовлення. Тому вона завжди свіжа та
+            преміум якості!&quot;
           </p>
         </div>
 
