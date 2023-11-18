@@ -21,7 +21,7 @@ export default function Home() {
       <main className={styles.main_container}>
         {/* Drop and welcome text */}
         <div className={styles.drop}>
-          <Image src={drop} width={50} height={"auto"} alt="Oil drop"></Image>
+          <Image src={drop} width={50} height={50} alt="Oil drop"></Image>
           <p className={caveat.className}>
             &quot;Виготовляємо олію під замовлення. Тому вона завжди свіжа та
             преміум якості!&quot;

@@ -6,13 +6,24 @@ import bottle from "../icons/bottle.svg";
 import plus from "../icons/plus.svg";
 import minus from "../icons/minus.svg";
 
-export default function Product({ product }) {
+export default function Product({
+  product,
+}: {
+  product: {
+    id: number;
+    name: string;
+    size: any[];
+    description: string;
+    icon: string;
+    photo: string;
+  };
+}) {
   const [showInfo, setShowInfo] = useState(false);
   const [amount, setAmount] = useState(1);
   const [productId, setProductId] = useState(0);
   const [basket, setBasket] = useState([]);
 
-  const addProduct = (event) => {
+  const addProduct = (event: any) => {
     event.preventDefault();
     //   console.log(event);
     //   let size = [...Object.values(event.target.form)].find(
